@@ -24,7 +24,13 @@ const Nav = () => {
           className='link link-text'
           to={'/'}
         >
-          Home
+         Sphere
+        </Link>
+        <Link
+          className='link link-text'
+          to={'/cuboid'}
+        >
+        Cuboid
         </Link>
         
       </ul>
