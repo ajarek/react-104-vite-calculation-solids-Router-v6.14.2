@@ -22,7 +22,7 @@ const Nav = () => {
       <ul className={!isOpen ? 'wrapper' : 'wrapper navbar-none'}>
         <Link
           className='link link-text'
-          to={'/'}
+          to={'/sphere'}
         >
          Sphere
         </Link>
