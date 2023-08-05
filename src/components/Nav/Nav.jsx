@@ -32,6 +32,24 @@ const Nav = () => {
         >
         Cuboid
         </Link>
+        <Link
+          className='link link-text'
+          to={'/cylinder'}
+        >
+        Cylinder
+        </Link>
+        <Link
+          className='link link-text'
+          to={'/cone'}
+        >
+        Cone
+        </Link>
+        <Link
+          className='link link-text'
+          to={'/pyramid'}
+        >
+        Pyramid
+        </Link>
         
       </ul>
       <div className='hamburger'>

@@ -2,13 +2,12 @@ import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
 import { useEffect } from 'react'
-import './FormCuboid.css'
+import './FormCylinder.css'
 
-export const FormCuboid = ({ onSubmit }) => {
+export const FormCylinder = ({ onSubmit }) => {
   const schema = yup.object().shape({
-    width: yup.number().min(1).required('must be a `number'),
-    length: yup.number().min(1).required('must be a `number'),
-    height: yup.number().min(1).required('must be a `number'),
+    radius: yup.number().min(1).required(),
+    height: yup.number().min(1).required(),
   })
 
   const {
@@ -24,9 +23,8 @@ export const FormCuboid = ({ onSubmit }) => {
   useEffect(() => {
     if (formState.isSubmitSuccessful) {
       reset({
-        width: '',
-        length: '',
-        height: '',
+        radius: '',
+        height:''
       })
     }
   }, [formState, reset])
@@ -39,25 +37,18 @@ export const FormCuboid = ({ onSubmit }) => {
       <div className='wrapper-input'>
         <input
           type='number'
-          {...register('length')}
-          placeholder='Enter the length "a"'
+          {...register('radius')}
+          placeholder='Enter the radius "r"'
           autoFocus
         />
-        <p>{errors?.length?.message}</p>
-      </div>
-      <div className='wrapper-input'>
-        <input
-          type='number'
-          {...register('width')}
-          placeholder='Enter the width "b"'
-        />
-        <p>{errors?.width?.message}</p>
+        <p>{errors?.radius?.message}</p>
       </div>
       <div className='wrapper-input'>
         <input
           type='number'
           {...register('height')}
           placeholder='Enter the height "h"'
+          autoFocus
         />
         <p>{errors?.height?.message}</p>
       </div>
