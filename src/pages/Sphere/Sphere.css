@@ -1,13 +1,14 @@
 .ball {
   width: 100%;
-  min-height:calc(100vh -80px ) ;
+  min-height: calc(100vh -80px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  
+
 }
-.ball .wrapper{
+
+.ball .wrapper {
   min-height: 300px;
   width: 100%;
   display: grid;
@@ -15,7 +16,8 @@
   gap: 16px;
   place-items: center;
 }
-.ball .result{
- margin-top: 32px; 
- font-size: 1.5rem;
+
+.ball .result {
+  margin-top: 32px;
+  font-size: 1.5rem;
 }

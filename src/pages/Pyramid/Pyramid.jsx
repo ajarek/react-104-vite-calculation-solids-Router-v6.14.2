@@ -28,9 +28,21 @@ const Pyramid = () => {
       </div>
       {result ? (
         <div className='result'>
-          <div>V={result.height*result.width*result.length/3}</div>
-          <div>P={result.length * Math.sqrt(result.height * result.height + 1 / 4 * result.width * result.width)+ result.width * Math.sqrt(result.height * result.height + 1 / 4 * result.length * result.length) + result.width * result.length}</div>
-          
+          <div>V={(result.height * result.width * result.length) / 3}</div>
+          <div>
+            P=
+            {result.length *
+              Math.sqrt(
+                result.height * result.height +
+                  (1 / 4) * result.width * result.width
+              ) +
+              result.width *
+                Math.sqrt(
+                  result.height * result.height +
+                    (1 / 4) * result.length * result.length
+                ) +
+              result.width * result.length}
+          </div>
         </div>
       ) : null}
     </div>

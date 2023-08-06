@@ -18,9 +18,10 @@
   border-radius: 5px;
   user-select: none;
   color: var(--black);
-  
+
 }
-.form input::placeholder{
+
+.form input::placeholder {
   text-align: center;
 }
 

@@ -28,9 +28,23 @@ const Cuboid = () => {
       </div>
       {result ? (
         <div className='result'>
-          <div>V={result.height*result.width*result.length}</div>
-          <div>P={2*(result.height*result.width+result.height*result.length+result.width*result.length)}</div>
-          <div>d={Math.pow((Math.pow(result.height,2))+(Math.pow(result.length,2))+(Math.pow(result.width,2)),0.5)}</div>
+          <div>V={result.height * result.width * result.length}</div>
+          <div>
+            P=
+            {2 *
+              (result.height * result.width +
+                result.height * result.length +
+                result.width * result.length)}
+          </div>
+          <div>
+            d=
+            {Math.pow(
+              Math.pow(result.height, 2) +
+                Math.pow(result.length, 2) +
+                Math.pow(result.width, 2),
+              0.5
+            )}
+          </div>
         </div>
       ) : null}
     </div>

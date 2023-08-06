@@ -1,14 +1,14 @@
 .cone {
   width: 100%;
-  min-height:calc(100vh -80px ) ;
+  min-height: calc(100vh -80px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  
+
 }
 
-.cone .wrapper{
+.cone .wrapper {
   min-height: 300px;
   width: 100%;
   display: grid;
@@ -16,7 +16,8 @@
   gap: 16px;
   place-items: center;
 }
-.cone .result{
- margin-top: 32px; 
- font-size: 1.5rem;
+
+.cone .result {
+  margin-top: 32px;
+  font-size: 1.5rem;
 }

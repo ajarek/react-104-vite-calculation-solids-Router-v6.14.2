@@ -24,7 +24,7 @@ export const FormCylinder = ({ onSubmit }) => {
     if (formState.isSubmitSuccessful) {
       reset({
         radius: '',
-        height:''
+        height: '',
       })
     }
   }, [formState, reset])

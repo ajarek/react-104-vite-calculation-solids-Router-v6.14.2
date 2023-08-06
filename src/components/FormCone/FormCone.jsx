@@ -25,8 +25,8 @@ export const FormCone = ({ onSubmit }) => {
     if (formState.isSubmitSuccessful) {
       reset({
         radius: '',
-        height:'',
-        forming:''
+        height: '',
+        forming: '',
       })
     }
   }, [formState, reset])

@@ -28,27 +28,25 @@ const router = createBrowserRouter([
         errorElement: <Error />,
       },
       {
-        path:'/cuboid',
+        path: '/cuboid',
         element: <Cuboid />,
         errorElement: <Error />,
       },
       {
-        path:'/cylinder',
+        path: '/cylinder',
         element: <Cylinder />,
         errorElement: <Error />,
       },
       {
-        path:'/cone',
+        path: '/cone',
         element: <Cone />,
         errorElement: <Error />,
       },
       {
-        path:'/pyramid',
+        path: '/pyramid',
         element: <Pyramid />,
         errorElement: <Error />,
       },
-
-      
     ],
   },
 ])
